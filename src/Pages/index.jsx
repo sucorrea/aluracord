@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import appConfig from "../../config.json";
 
-import { Box, Button, Text, TextField, Image } from "@skynexui/components";
 import { useRouter } from "next/router";
+import { Box, Button, Text, TextField, Image } from "@skynexui/components";
 import { Titulo } from "../Components/Titulo";
 
 export default function PaginaInicial() {
