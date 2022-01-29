@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import appConfig from "../../config.json";
-
 import { useRouter } from "next/router";
+
 import { Box, Button, Text, TextField, Image } from "@skynexui/components";
+
+import appConfig from "../../config.json";
 import { Titulo } from "../Components/Titulo";
 import {
   formulario,
@@ -27,7 +28,6 @@ const PaginaInicial = () => {
 
   const handleSubmit = (infosDoEvento) => {
     infosDoEvento.preventDefault();
-    console.log("Alguém submeteu o form");
     roteamento.push("/chat");
     // window.location.href = '/chat';
   };
@@ -36,7 +36,6 @@ const PaginaInicial = () => {
     <>
       <Box styleSheet={wrapper}>
         <Box styleSheet={formulario}>
-          {/* Formulário */}
           <Box as="form" onSubmit={handleSubmit} styleSheet={wrapperForm}>
             <Titulo tag="h2">Boas vindas de volta!</Titulo>
             <Text variant="body3" styleSheet={nome}>
@@ -55,9 +54,6 @@ const PaginaInicial = () => {
               buttonColors={buttonCollors}
             />
           </Box>
-          {/* Formulário */}
-
-          {/* Photo Area */}
           <Box styleSheet={wrapperImagem}>
             <Image
               styleSheet={imagem}
@@ -67,7 +63,6 @@ const PaginaInicial = () => {
               {username}
             </Text>
           </Box>
-          {/* Photo Area */}
         </Box>
       </Box>
     </>
