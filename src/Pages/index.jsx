@@ -16,7 +16,7 @@ import {
   imagem,
 } from "./styles";
 
-export default function PaginaInicial() {
+const PaginaInicial = () => {
   const [username, setUsername] = useState("sucorrea");
   const roteamento = useRouter();
 
@@ -72,4 +72,6 @@ export default function PaginaInicial() {
       </Box>
     </>
   );
-}
+};
+
+export default PaginaInicial;
