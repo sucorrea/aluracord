@@ -4,9 +4,10 @@ export const wrapper = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  // backgroundColor: appConfig.theme.colors.primary[500],
+  borderRadius: "10px",
+  backgroundColor: appConfig.theme.colors.primary["100"],
   backgroundImage:
-    "url(https://virtualbackgrounds.site/wp-content/uploads/2020/07/simpsons-couch-1536x864.jpg)",
+    "url(https://i.pinimg.com/originals/bd/24/20/bd24202df70d1807f1e77df1b889cda8.jpg)",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundBlendMode: "multiply",
@@ -76,8 +77,8 @@ export const legendaImagem = {
   backgroundColor: appConfig.theme.colors.neutrals[900],
   padding: "3px 10px",
   borderRadius: "1000px",
-}
+};
 export const imagem = {
   borderRadius: "50%",
   marginBottom: "16px",
-}
+};
