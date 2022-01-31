@@ -38,7 +38,7 @@ export default function ChatPage() {
 
   function handleNovaMensagem(novaMensagem) {
     const mensagem = {
-      // id: listaDeMensagens.length + 1,
+      id: listaDeMensagens.length + 1,
       de: "sucorrea",
       texto: novaMensagem,
     };
@@ -50,7 +50,6 @@ export default function ChatPage() {
         mensagem,
       ])
       .then(({ data }) => {
-        console.log("Criando mensagem: ", data);
         setListaDeMensagens([data[0], ...listaDeMensagens]);
       });
 
@@ -75,13 +74,6 @@ export default function ChatPage() {
         <Header />
         <Box styleSheet={boxMessage}>
           <MessageList mensagens={listaDeMensagens} />
-          {/* {listaDeMensagens.map((mensagemAtual) => {
-            return (
-              <li key={mensagemAtual.id}>
-                {mensagemAtual.de}: {mensagemAtual.texto}
-              </li>
-            );
-          })} */}
           <Box as="form" styleSheet={boxForm}>
             <TextField
               value={mensagem}
@@ -100,17 +92,15 @@ export default function ChatPage() {
 
 function Header() {
   return (
-    <>
-      <Box styleSheet={boxHeader}>
-        <Text variant="heading5">Chat</Text>
-        <Button
-          variant="tertiary"
-          colorVariant="neutral"
-          label="Logout"
-          href="/"
-        />
-      </Box>
-    </>
+    <Box styleSheet={boxHeader}>
+      <Text variant="heading5">Chat</Text>
+      <Button
+        variant="tertiary"
+        colorVariant="neutral"
+        label="Logout"
+        href="/"
+      />
+    </Box>
   );
 }
 

@@ -5,7 +5,8 @@ export const container = {
   alignItems: "center",
   justifyContent: "center",
   backgroundColor: appConfig.theme.colors.primary[500],
-  backgroundImage: `url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)`,
+  backgroundImage:
+    "url(https://i.pinimg.com/originals/bd/24/20/bd24202df70d1807f1e77df1b889cda8.jpg)",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundBlendMode: "multiply",
